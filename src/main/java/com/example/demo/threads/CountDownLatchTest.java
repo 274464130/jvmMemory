@@ -27,7 +27,7 @@ public class CountDownLatchTest {
             try {
                 System.out.println("开始执行第一段代码");
 
-                Thread.sleep(2000);
+//                Thread.sleep(2000);
 
             }catch (Exception e){
                 e.printStackTrace();
@@ -46,7 +46,7 @@ public class CountDownLatchTest {
             }catch (Exception e){
                 e.printStackTrace();
             }
-            System.out.println("2结束");
+//            System.out.println("2结束");
             latch.countDown();
 
         }).start();

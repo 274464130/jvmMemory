@@ -6,12 +6,12 @@ public class FibonacciNumber {
      * @param num
      * @return
      */
-    public static int doublepointer(int num){
+    public static long doublepointer(int num){
         if(num==0) return  0;
         if(num==1)  return  1;
-        int low =0  ,hig=1;
+        long low =0  ,hig=1;
         for(int i=2;i<=num;i++){
-            int sum =low+hig;
+            long sum =low+hig;
             low=hig;
             hig=sum;
         }
@@ -19,6 +19,6 @@ public class FibonacciNumber {
     }
 
     public static void main(String[] args) {
-        System.out.println( doublepointer(10));
+        System.out.println( doublepointer(600000));
     }
 }
